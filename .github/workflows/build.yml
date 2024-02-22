@@ -65,6 +65,7 @@ jobs:
 
       - name: Build Windows image
         if: runner.os == 'Windows'
+        shell: pwsh
         run: |
           docker build . \
             --pull=true \
