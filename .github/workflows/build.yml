@@ -71,7 +71,7 @@ jobs:
         run: |
           docker buildx build . \
             --pull=true \
-            --file=Dockerfile-windows \
+            --file=Dockerfile \
             --platform=windows/amd64 \
             --tag="$IMAGE_NAME:windows" \
             --label="org.opencontainers.image.source=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" \
